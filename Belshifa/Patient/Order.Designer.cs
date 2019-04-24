@@ -39,8 +39,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.DetailsTextBox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.DetailsListBox = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // CategoryList
@@ -159,15 +159,6 @@
             this.label4.Text = "Quantity";
             this.label4.Visible = false;
             // 
-            // DetailsTextBox
-            // 
-            this.DetailsTextBox.Location = new System.Drawing.Point(242, 366);
-            this.DetailsTextBox.Multiline = true;
-            this.DetailsTextBox.Name = "DetailsTextBox";
-            this.DetailsTextBox.Size = new System.Drawing.Size(262, 153);
-            this.DetailsTextBox.TabIndex = 16;
-            this.DetailsTextBox.Visible = false;
-            // 
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -181,14 +172,23 @@
             this.button1.Visible = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // DetailsListBox
+            // 
+            this.DetailsListBox.FormattingEnabled = true;
+            this.DetailsListBox.ItemHeight = 16;
+            this.DetailsListBox.Location = new System.Drawing.Point(230, 361);
+            this.DetailsListBox.Name = "DetailsListBox";
+            this.DetailsListBox.Size = new System.Drawing.Size(132, 116);
+            this.DetailsListBox.TabIndex = 18;
+            // 
             // Order
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCoral;
             this.ClientSize = new System.Drawing.Size(772, 531);
+            this.Controls.Add(this.DetailsListBox);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.DetailsTextBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -202,6 +202,7 @@
             this.Controls.Add(this.CategoryList);
             this.Name = "Order";
             this.Text = "Order";
+            this.Load += new System.EventHandler(this.Order_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -220,7 +221,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox DetailsTextBox;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ListBox DetailsListBox;
     }
 }
