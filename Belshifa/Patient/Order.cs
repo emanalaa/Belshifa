@@ -111,5 +111,10 @@ namespace Belshifa
             }
             dr.Close();
         }
+
+        private void AddtoCartButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

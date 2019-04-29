@@ -100,6 +100,7 @@
             this.AddtoCartButton.Text = "Add to cart";
             this.AddtoCartButton.UseVisualStyleBackColor = true;
             this.AddtoCartButton.Visible = false;
+            this.AddtoCartButton.Click += new System.EventHandler(this.AddtoCartButton_Click);
             // 
             // CheckoutButton
             // 
