@@ -38,11 +38,9 @@ C:\Users\Eman\Desktop\Belshifa\Belshifa\bin\Debug\Belshifa.exe.config
 C:\Users\Eman\Desktop\Belshifa\Belshifa\bin\Debug\Belshifa.exe
 C:\Users\Eman\Desktop\Belshifa\Belshifa\bin\Debug\Belshifa.pdb
 C:\Users\Eman\Desktop\Belshifa\Belshifa\bin\Debug\Oracle.DataAccess.dll
-<<<<<<< HEAD
 C:\Users\Gamela\Documents\Belshifa\Belshifa\bin\Debug\Belshifa.exe.config
 C:\Users\Gamela\Documents\Belshifa\Belshifa\obj\Debug\Belshifa.exe
 C:\Users\Gamela\Documents\Belshifa\Belshifa\obj\Debug\Belshifa.pdb
-=======
 E:\Menna\gam3a\3rd year\2nd-term\DB\Belshifa\Belshifa\bin\Debug\Belshifa.exe.config
 E:\Menna\gam3a\3rd year\2nd-term\DB\Belshifa\Belshifa\bin\Debug\Belshifa.exe
 E:\Menna\gam3a\3rd year\2nd-term\DB\Belshifa\Belshifa\bin\Debug\Belshifa.pdb
@@ -62,4 +60,3 @@ E:\Menna\gam3a\3rd year\2nd-term\DB\Belshifa\Belshifa\obj\Debug\Belshifa.Update_
 E:\Menna\gam3a\3rd year\2nd-term\DB\Belshifa\Belshifa\obj\Debug\Belshifa.csproj.GenerateResource.Cache
 E:\Menna\gam3a\3rd year\2nd-term\DB\Belshifa\Belshifa\obj\Debug\Belshifa.exe
 E:\Menna\gam3a\3rd year\2nd-term\DB\Belshifa\Belshifa\obj\Debug\Belshifa.pdb
->>>>>>> master
