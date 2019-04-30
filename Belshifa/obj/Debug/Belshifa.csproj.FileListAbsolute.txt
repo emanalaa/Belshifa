@@ -38,3 +38,6 @@ C:\Users\Eman\Desktop\Belshifa\Belshifa\bin\Debug\Belshifa.exe.config
 C:\Users\Eman\Desktop\Belshifa\Belshifa\bin\Debug\Belshifa.exe
 C:\Users\Eman\Desktop\Belshifa\Belshifa\bin\Debug\Belshifa.pdb
 C:\Users\Eman\Desktop\Belshifa\Belshifa\bin\Debug\Oracle.DataAccess.dll
+C:\Users\Gamela\Documents\Belshifa\Belshifa\bin\Debug\Belshifa.exe.config
+C:\Users\Gamela\Documents\Belshifa\Belshifa\obj\Debug\Belshifa.exe
+C:\Users\Gamela\Documents\Belshifa\Belshifa\obj\Debug\Belshifa.pdb
