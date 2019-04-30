@@ -28,40 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.DetailsTextBox = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.PrecautionsTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.QuantityDomain = new System.Windows.Forms.DomainUpDown();
             this.PriceTextbox = new System.Windows.Forms.TextBox();
             this.DrugComboBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.CategoryList = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.Updatebutton = new System.Windows.Forms.Button();
+            this.Backbutton = new System.Windows.Forms.Button();
+            this.Deletebutton = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
+            this.usageTextBox = new System.Windows.Forms.TextBox();
+            this.IndicationtextBox = new System.Windows.Forms.TextBox();
+            this.DrugInteractiontextBox = new System.Windows.Forms.TextBox();
+            this.SideEffectstextBox = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.FoodInteractiontextBox = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // DetailsTextBox
+            // PrecautionsTextBox
             // 
-            this.DetailsTextBox.Location = new System.Drawing.Point(242, 351);
-            this.DetailsTextBox.Multiline = true;
-            this.DetailsTextBox.Name = "DetailsTextBox";
-            this.DetailsTextBox.Size = new System.Drawing.Size(262, 153);
-            this.DetailsTextBox.TabIndex = 26;
-            this.DetailsTextBox.Visible = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Perpetua Titling MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(241, 213);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(111, 21);
-            this.label4.TabIndex = 25;
-            this.label4.Text = "Quantity";
-            this.label4.Visible = false;
+            this.PrecautionsTextBox.Location = new System.Drawing.Point(407, 281);
+            this.PrecautionsTextBox.Multiline = true;
+            this.PrecautionsTextBox.Name = "PrecautionsTextBox";
+            this.PrecautionsTextBox.Size = new System.Drawing.Size(161, 75);
+            this.PrecautionsTextBox.TabIndex = 26;
+            this.PrecautionsTextBox.Visible = false;
             // 
             // label3
             // 
@@ -80,27 +77,18 @@
             this.label2.AutoSize = true;
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Perpetua Titling MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(263, 133);
+            this.label2.Location = new System.Drawing.Point(241, 100);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 21);
             this.label2.TabIndex = 23;
             this.label2.Text = "Price";
             this.label2.Visible = false;
             // 
-            // QuantityDomain
-            // 
-            this.QuantityDomain.Location = new System.Drawing.Point(367, 215);
-            this.QuantityDomain.Name = "QuantityDomain";
-            this.QuantityDomain.Size = new System.Drawing.Size(137, 22);
-            this.QuantityDomain.TabIndex = 21;
-            this.QuantityDomain.Text = "domainUpDown1";
-            this.QuantityDomain.Visible = false;
-            // 
             // PriceTextbox
             // 
-            this.PriceTextbox.Location = new System.Drawing.Point(367, 132);
+            this.PriceTextbox.Location = new System.Drawing.Point(367, 101);
             this.PriceTextbox.Name = "PriceTextbox";
-            this.PriceTextbox.Size = new System.Drawing.Size(137, 22);
+            this.PriceTextbox.Size = new System.Drawing.Size(144, 22);
             this.PriceTextbox.TabIndex = 20;
             this.PriceTextbox.Visible = false;
             // 
@@ -112,6 +100,7 @@
             this.DrugComboBox.Size = new System.Drawing.Size(262, 24);
             this.DrugComboBox.TabIndex = 19;
             this.DrugComboBox.Visible = false;
+            this.DrugComboBox.SelectedIndexChanged += new System.EventHandler(this.DrugComboBox_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -132,54 +121,157 @@
             this.CategoryList.Name = "CategoryList";
             this.CategoryList.Size = new System.Drawing.Size(149, 452);
             this.CategoryList.TabIndex = 17;
+            this.CategoryList.SelectedIndexChanged += new System.EventHandler(this.CategoryList_SelectedIndexChanged);
             // 
-            // button1
+            // Updatebutton
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Perpetua Titling MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(620, 154);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 53);
-            this.button1.TabIndex = 27;
-            this.button1.Text = "Update";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Visible = false;
+            this.Updatebutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Updatebutton.Font = new System.Drawing.Font("Perpetua Titling MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Updatebutton.Location = new System.Drawing.Point(661, 178);
+            this.Updatebutton.Name = "Updatebutton";
+            this.Updatebutton.Size = new System.Drawing.Size(110, 53);
+            this.Updatebutton.TabIndex = 27;
+            this.Updatebutton.Text = "Update";
+            this.Updatebutton.UseVisualStyleBackColor = true;
+            this.Updatebutton.Visible = false;
+            this.Updatebutton.Click += new System.EventHandler(this.Updatebutton_Click);
             // 
-            // button2
+            // Backbutton
             // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Perpetua Titling MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(661, 451);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(110, 53);
-            this.button2.TabIndex = 28;
-            this.button2.Text = "Back";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Visible = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.Backbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Backbutton.Font = new System.Drawing.Font("Perpetua Titling MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Backbutton.Location = new System.Drawing.Point(661, 451);
+            this.Backbutton.Name = "Backbutton";
+            this.Backbutton.Size = new System.Drawing.Size(110, 53);
+            this.Backbutton.TabIndex = 28;
+            this.Backbutton.Text = "Back";
+            this.Backbutton.UseVisualStyleBackColor = true;
+            this.Backbutton.Visible = false;
+            this.Backbutton.Click += new System.EventHandler(this.back_Click);
             // 
-            // button3
+            // Deletebutton
             // 
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Perpetua Titling MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(620, 228);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(110, 53);
-            this.button3.TabIndex = 29;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Visible = false;
+            this.Deletebutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Deletebutton.Font = new System.Drawing.Font("Perpetua Titling MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Deletebutton.Location = new System.Drawing.Point(661, 258);
+            this.Deletebutton.Name = "Deletebutton";
+            this.Deletebutton.Size = new System.Drawing.Size(110, 53);
+            this.Deletebutton.TabIndex = 29;
+            this.Deletebutton.Text = "Delete";
+            this.Deletebutton.UseVisualStyleBackColor = true;
+            this.Deletebutton.Visible = false;
+            this.Deletebutton.Click += new System.EventHandler(this.Deletebutton_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Perpetua Titling MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(241, 314);
+            this.label5.Location = new System.Drawing.Point(219, 147);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(84, 21);
+            this.label5.Size = new System.Drawing.Size(70, 21);
             this.label5.TabIndex = 30;
-            this.label5.Text = "Details";
+            this.label5.Text = "Usage";
             this.label5.Visible = false;
+            // 
+            // usageTextBox
+            // 
+            this.usageTextBox.Location = new System.Drawing.Point(180, 171);
+            this.usageTextBox.Multiline = true;
+            this.usageTextBox.Name = "usageTextBox";
+            this.usageTextBox.Size = new System.Drawing.Size(161, 75);
+            this.usageTextBox.TabIndex = 31;
+            this.usageTextBox.Visible = false;
+            // 
+            // IndicationtextBox
+            // 
+            this.IndicationtextBox.Location = new System.Drawing.Point(180, 281);
+            this.IndicationtextBox.Multiline = true;
+            this.IndicationtextBox.Name = "IndicationtextBox";
+            this.IndicationtextBox.Size = new System.Drawing.Size(161, 75);
+            this.IndicationtextBox.TabIndex = 32;
+            this.IndicationtextBox.Visible = false;
+            // 
+            // DrugInteractiontextBox
+            // 
+            this.DrugInteractiontextBox.Location = new System.Drawing.Point(407, 402);
+            this.DrugInteractiontextBox.Multiline = true;
+            this.DrugInteractiontextBox.Name = "DrugInteractiontextBox";
+            this.DrugInteractiontextBox.Size = new System.Drawing.Size(161, 75);
+            this.DrugInteractiontextBox.TabIndex = 33;
+            this.DrugInteractiontextBox.Visible = false;
+            // 
+            // SideEffectstextBox
+            // 
+            this.SideEffectstextBox.Location = new System.Drawing.Point(407, 171);
+            this.SideEffectstextBox.Multiline = true;
+            this.SideEffectstextBox.Name = "SideEffectstextBox";
+            this.SideEffectstextBox.Size = new System.Drawing.Size(161, 75);
+            this.SideEffectstextBox.TabIndex = 34;
+            this.SideEffectstextBox.Visible = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Perpetua Titling MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(167, 378);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(196, 21);
+            this.label4.TabIndex = 35;
+            this.label4.Text = "Food Interaction";
+            this.label4.Visible = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Perpetua Titling MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(424, 147);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(128, 21);
+            this.label6.TabIndex = 36;
+            this.label6.Text = "Side Effects";
+            this.label6.Visible = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Perpetua Titling MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(196, 257);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(123, 21);
+            this.label7.TabIndex = 37;
+            this.label7.Text = "indication";
+            this.label7.Visible = false;
+            // 
+            // FoodInteractiontextBox
+            // 
+            this.FoodInteractiontextBox.Location = new System.Drawing.Point(180, 402);
+            this.FoodInteractiontextBox.Multiline = true;
+            this.FoodInteractiontextBox.Name = "FoodInteractiontextBox";
+            this.FoodInteractiontextBox.Size = new System.Drawing.Size(161, 75);
+            this.FoodInteractiontextBox.TabIndex = 38;
+            this.FoodInteractiontextBox.Visible = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Perpetua Titling MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(388, 378);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(199, 21);
+            this.label8.TabIndex = 39;
+            this.label8.Text = "Drug Interaction";
+            this.label8.Visible = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Perpetua Titling MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(424, 257);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(140, 21);
+            this.label9.TabIndex = 40;
+            this.label9.Text = "Precautions";
+            this.label9.Visible = false;
             // 
             // Update_Delete
             // 
@@ -188,21 +280,30 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCoral;
             this.ClientSize = new System.Drawing.Size(800, 521);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.DetailsTextBox);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.FoodInteractiontextBox);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
+            this.Controls.Add(this.SideEffectstextBox);
+            this.Controls.Add(this.DrugInteractiontextBox);
+            this.Controls.Add(this.IndicationtextBox);
+            this.Controls.Add(this.usageTextBox);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.Deletebutton);
+            this.Controls.Add(this.Backbutton);
+            this.Controls.Add(this.Updatebutton);
+            this.Controls.Add(this.PrecautionsTextBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.QuantityDomain);
             this.Controls.Add(this.PriceTextbox);
             this.Controls.Add(this.DrugComboBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.CategoryList);
             this.Name = "Update_Delete";
             this.Text = "Update_Delete";
+            this.Load += new System.EventHandler(this.Update_Delete_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -210,18 +311,26 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox DetailsTextBox;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox PrecautionsTextBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DomainUpDown QuantityDomain;
         private System.Windows.Forms.TextBox PriceTextbox;
         private System.Windows.Forms.ComboBox DrugComboBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox CategoryList;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button Updatebutton;
+        private System.Windows.Forms.Button Backbutton;
+        private System.Windows.Forms.Button Deletebutton;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox usageTextBox;
+        private System.Windows.Forms.TextBox IndicationtextBox;
+        private System.Windows.Forms.TextBox DrugInteractiontextBox;
+        private System.Windows.Forms.TextBox SideEffectstextBox;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox FoodInteractiontextBox;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
     }
 }
