@@ -60,3 +60,4 @@ E:\Menna\gam3a\3rd year\2nd-term\DB\Belshifa\Belshifa\obj\Debug\Belshifa.Update_
 E:\Menna\gam3a\3rd year\2nd-term\DB\Belshifa\Belshifa\obj\Debug\Belshifa.csproj.GenerateResource.Cache
 E:\Menna\gam3a\3rd year\2nd-term\DB\Belshifa\Belshifa\obj\Debug\Belshifa.exe
 E:\Menna\gam3a\3rd year\2nd-term\DB\Belshifa\Belshifa\obj\Debug\Belshifa.pdb
+E:\Menna\gam3a\3rd year\2nd-term\DB\Belshifa\Belshifa\obj\Debug\Belshifa.Patient.History.resources
