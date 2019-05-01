@@ -13,10 +13,9 @@ namespace Belshifa
 {
     public partial class Login : Form
     {
+        string conn = "Data Source = orcl ; User Id = hr ; password = hr ;";
         public static string LoggedUserEmail;
-        OracleDataAdapter data_adapter;
-        OracleCommandBuilder command_builder;
-        DataSet DS;
+        
         public Login()
         {
             InitializeComponent();
@@ -27,12 +26,15 @@ namespace Belshifa
         {
             bool patient_found = false;
             bool pharmacist_found = false;
-            string conn = "Data Source = orcl ; User Id = hr ; password = hr ;";
-            string command = "select password from patient where e-mail = :n";
-            data_adapter = new OracleDataAdapter(command, conn);
-            data_adapter.SelectCommand.Parameters.Add("n", Email_textBox);
-            DS = new DataSet();
+
+            string command = "select password from patient where email =:n";
+
+            OracleDataAdapter data_adapter = new OracleDataAdapter(command, conn);
+            data_adapter.SelectCommand.Parameters.Add("n", Email_textBox.Text);
+
+            DataSet DS = new DataSet();
             data_adapter.Fill(DS);
+
             if (DS.Tables[0].Rows.Count != 0)
             {
                 patient_found = true;
@@ -40,10 +42,13 @@ namespace Belshifa
             else
             {
                 command = "select password from pharmacist where username = :n";
+
                 data_adapter = new OracleDataAdapter(command, conn);
-                data_adapter.SelectCommand.Parameters.Add("n", Email_textBox);
+                data_adapter.SelectCommand.Parameters.Add("n", Email_textBox.Text);
+
                 DS = new DataSet();
                 data_adapter.Fill(DS);
+
                 if (DS.Tables[0].Rows.Count !=0)
                 {
                     pharmacist_found = true;
@@ -51,12 +56,14 @@ namespace Belshifa
             }
             if (patient_found)
             {
+                LoggedUserEmail = Email_textBox.Text;
                 PatientHome PH = new PatientHome();
                 PH.Show();
                 this.Hide();
             }
             else if (pharmacist_found)
             {
+                LoggedUserEmail = Email_textBox.Text;
                 PharamcistOptions PO = new PharamcistOptions();
                 PO.Show();
                 this.Hide();
