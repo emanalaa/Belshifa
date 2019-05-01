@@ -56,6 +56,12 @@
     <Compile Include="Patient\Cart.Designer.cs">
       <DependentUpon>Cart.cs</DependentUpon>
     </Compile>
+    <Compile Include="Patient\History.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient\History.Designer.cs">
+      <DependentUpon>History.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pharmacist\Insert.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +126,9 @@
     </Compile>
     <EmbeddedResource Include="Patient\Cart.resx">
       <DependentUpon>Cart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient\History.resx">
+      <DependentUpon>History.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pharmacist\Insert.resx">
       <DependentUpon>Insert.cs</DependentUpon>
