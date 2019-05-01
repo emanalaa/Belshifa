@@ -7,8 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Oracle.dataaccess.client;
-using Oracle.DataAccess.types;
+using Oracle.DataAccess.Client;
+using Oracle.DataAccess.Types;
 namespace Belshifa
 {
     public partial class Insert : Form
@@ -27,7 +27,7 @@ namespace Belshifa
             string commandstr = "select Category from Medication";
             adapter = new OracleDataAdapter(commandstr, connectionstr);
             ds = new DataSet();
-            adapter.fill(ds);
+            adapter.Fill(ds);
             CategorycomboBox.DataSource = ds.Tables[0].Columns["Category"];
         }
 
@@ -38,16 +38,16 @@ namespace Belshifa
 
             else if (CategorycomboBox.SelectedIndex > -1) //somthing was selected
             {
-                OracleDataAdapter adapter;
+                OracleDataAdapter adapter = new OracleDataAdapter();
                 OracleCommandBuilder builder;
                 string Cat_Name = CategorycomboBox.SelectedItem.ToString();
                 string connectionstr = "Data Source = orcl; User Id = hr; Password= hr;";
                 string commandstr = "select * from Medication where Category = :c";//bind var
-                adapter.SelectCommand.Paramters.Add("c", CategorycomboBox.SelectedItem.ToString());
+                adapter.SelectCommand.Parameters.Add("c", CategorycomboBox.SelectedItem.ToString());
                 adapter = new OracleDataAdapter(commandstr, connectionstr);
                 ds = new DataSet();
                 adapter.FillSchema(ds, SchemaType.Source, "Medication");
-                adapter.fill(ds);
+                adapter.Fill(ds);
 
                 DataTable data_table;
                 data_table = ds.Tables["Medication"];

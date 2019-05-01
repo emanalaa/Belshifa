@@ -37,10 +37,5 @@ namespace Belshifa
             Home.Show();
             this.Hide();
         }
-
-        private void history_button_Click(object sender, EventArgs e)
-        {
-            
-        }
     }
 }

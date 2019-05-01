@@ -16,5 +16,19 @@ namespace Belshifa
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Update_Delete GUI = new Update_Delete();
+            GUI.Show();
+            this.Hide();
+        }
+
+        private void AddtoCartButton_Click(object sender, EventArgs e)
+        {
+            Insert insert = new Insert();
+            insert.Show();
+            this.Hide();
+        }
     }
 }

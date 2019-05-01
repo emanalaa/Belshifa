@@ -41,10 +41,9 @@
             // 
             this.LoginFormButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LoginFormButton.Font = new System.Drawing.Font("Perpetua Titling MT", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LoginFormButton.Location = new System.Drawing.Point(342, 274);
-            this.LoginFormButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.LoginFormButton.Location = new System.Drawing.Point(304, 219);
             this.LoginFormButton.Name = "LoginFormButton";
-            this.LoginFormButton.Size = new System.Drawing.Size(170, 68);
+            this.LoginFormButton.Size = new System.Drawing.Size(151, 54);
             this.LoginFormButton.TabIndex = 0;
             this.LoginFormButton.Text = "Login";
             this.LoginFormButton.UseVisualStyleBackColor = true;
@@ -54,10 +53,9 @@
             // 
             this.SignupFormButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SignupFormButton.Font = new System.Drawing.Font("Perpetua Titling MT", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SignupFormButton.Location = new System.Drawing.Point(342, 349);
-            this.SignupFormButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.SignupFormButton.Location = new System.Drawing.Point(304, 279);
             this.SignupFormButton.Name = "SignupFormButton";
-            this.SignupFormButton.Size = new System.Drawing.Size(170, 68);
+            this.SignupFormButton.Size = new System.Drawing.Size(151, 54);
             this.SignupFormButton.TabIndex = 1;
             this.SignupFormButton.Text = "Sign up";
             this.SignupFormButton.UseVisualStyleBackColor = true;
@@ -67,9 +65,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Perpetua Titling MT", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(189, 96);
+            this.label1.Location = new System.Drawing.Point(168, 77);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(458, 27);
+            this.label1.Size = new System.Drawing.Size(397, 23);
             this.label1.TabIndex = 2;
             this.label1.Text = "Welcome to belshefa application";
             // 
@@ -77,10 +75,9 @@
             // 
             this.Patient.AutoSize = true;
             this.Patient.Font = new System.Drawing.Font("Perpetua Titling MT", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Patient.Location = new System.Drawing.Point(79, 26);
-            this.Patient.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Patient.Location = new System.Drawing.Point(70, 21);
             this.Patient.Name = "Patient";
-            this.Patient.Size = new System.Drawing.Size(117, 26);
+            this.Patient.Size = new System.Drawing.Size(98, 22);
             this.Patient.TabIndex = 3;
             this.Patient.TabStop = true;
             this.Patient.Text = "Patient";
@@ -90,10 +87,9 @@
             // 
             this.Pharmacist.AutoSize = true;
             this.Pharmacist.Font = new System.Drawing.Font("Perpetua Titling MT", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Pharmacist.Location = new System.Drawing.Point(250, 26);
-            this.Pharmacist.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Pharmacist.Location = new System.Drawing.Point(222, 21);
             this.Pharmacist.Name = "Pharmacist";
-            this.Pharmacist.Size = new System.Drawing.Size(163, 26);
+            this.Pharmacist.Size = new System.Drawing.Size(137, 22);
             this.Pharmacist.TabIndex = 4;
             this.Pharmacist.TabStop = true;
             this.Pharmacist.Text = "Pharmacist";
@@ -103,29 +99,25 @@
             // 
             this.groupBox1.Controls.Add(this.Patient);
             this.groupBox1.Controls.Add(this.Pharmacist);
-            this.groupBox1.Location = new System.Drawing.Point(194, 151);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox1.Location = new System.Drawing.Point(172, 121);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox1.Size = new System.Drawing.Size(442, 86);
+            this.groupBox1.Size = new System.Drawing.Size(393, 69);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
             // Start
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCoral;
-            this.ClientSize = new System.Drawing.Size(835, 562);
+            this.ClientSize = new System.Drawing.Size(742, 450);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.SignupFormButton);
             this.Controls.Add(this.LoginFormButton);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Start";
             this.Text = "Start";
-            this.Load += new System.EventHandler(this.Start_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
