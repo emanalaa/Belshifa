@@ -1,0 +1,81 @@
+D:\3rd year semester2\Database\Belshifa\Belshifa\bin\Debug\Belshifa.exe.config
+D:\3rd year semester2\Database\Belshifa\Belshifa\bin\Debug\Belshifa.exe
+D:\3rd year semester2\Database\Belshifa\Belshifa\bin\Debug\Belshifa.pdb
+D:\3rd year semester2\Database\Belshifa\Belshifa\obj\Debug\Belshifa.csprojAssemblyReference.cache
+D:\3rd year semester2\Database\Belshifa\Belshifa\obj\Debug\Belshifa.Properties.Resources.resources
+D:\3rd year semester2\Database\Belshifa\Belshifa\obj\Debug\Belshifa.csproj.GenerateResource.cache
+D:\3rd year semester2\Database\Belshifa\Belshifa\obj\Debug\Belshifa.csproj.CoreCompileInputs.cache
+D:\3rd year semester2\Database\Belshifa\Belshifa\obj\Debug\Belshifa.exe
+D:\3rd year semester2\Database\Belshifa\Belshifa\obj\Debug\Belshifa.pdb
+D:\3rd year semester2\Database\Belshifa\Belshifa\obj\Debug\Belshifa.Order.resources
+D:\3rd year semester2\Database\Belshifa\Belshifa\obj\Debug\Belshifa.Cart.resources
+D:\3rd year semester2\Database\Belshifa\Belshifa\obj\Debug\Belshifa.Insert.resources
+D:\3rd year semester2\Database\Belshifa\Belshifa\obj\Debug\Belshifa.Login.resources
+D:\3rd year semester2\Database\Belshifa\Belshifa\obj\Debug\Belshifa.PatientHome.resources
+D:\3rd year semester2\Database\Belshifa\Belshifa\obj\Debug\Belshifa.PharamcistOptions.resources
+D:\3rd year semester2\Database\Belshifa\Belshifa\obj\Debug\Belshifa.Register.resources
+D:\3rd year semester2\Database\Belshifa\Belshifa\obj\Debug\Belshifa.RegisterPharmacist.resources
+D:\3rd year semester2\Database\Belshifa\Belshifa\obj\Debug\Belshifa.Settings.resources
+D:\3rd year semester2\Database\Belshifa\Belshifa\obj\Debug\Belshifa.Start.resources
+D:\3rd year semester2\Database\Belshifa\Belshifa\obj\Debug\Belshifa.Update_Delete.resources
+C:\Users\Eman\Desktop\Belshifa\Belshifa\obj\Debug\Belshifa.csprojResolveAssemblyReference.cache
+C:\Users\Eman\Desktop\Belshifa\Belshifa\obj\Debug\Belshifa.Cart.resources
+C:\Users\Eman\Desktop\Belshifa\Belshifa\obj\Debug\Belshifa.Insert.resources
+C:\Users\Eman\Desktop\Belshifa\Belshifa\obj\Debug\Belshifa.Login.resources
+C:\Users\Eman\Desktop\Belshifa\Belshifa\obj\Debug\Belshifa.Order.resources
+C:\Users\Eman\Desktop\Belshifa\Belshifa\obj\Debug\Belshifa.PatientHome.resources
+C:\Users\Eman\Desktop\Belshifa\Belshifa\obj\Debug\Belshifa.PharamcistOptions.resources
+C:\Users\Eman\Desktop\Belshifa\Belshifa\obj\Debug\Belshifa.Properties.Resources.resources
+C:\Users\Eman\Desktop\Belshifa\Belshifa\obj\Debug\Belshifa.Register.resources
+C:\Users\Eman\Desktop\Belshifa\Belshifa\obj\Debug\Belshifa.RegisterPharmacist.resources
+C:\Users\Eman\Desktop\Belshifa\Belshifa\obj\Debug\Belshifa.Settings.resources
+C:\Users\Eman\Desktop\Belshifa\Belshifa\obj\Debug\Belshifa.Start.resources
+C:\Users\Eman\Desktop\Belshifa\Belshifa\obj\Debug\Belshifa.Update_Delete.resources
+C:\Users\Eman\Desktop\Belshifa\Belshifa\obj\Debug\Belshifa.csproj.GenerateResource.Cache
+C:\Users\Eman\Desktop\Belshifa\Belshifa\obj\Debug\Belshifa.exe
+C:\Users\Eman\Desktop\Belshifa\Belshifa\obj\Debug\Belshifa.pdb
+C:\Users\Eman\Desktop\Belshifa\Belshifa\bin\Debug\Belshifa.exe.config
+C:\Users\Eman\Desktop\Belshifa\Belshifa\bin\Debug\Belshifa.exe
+C:\Users\Eman\Desktop\Belshifa\Belshifa\bin\Debug\Belshifa.pdb
+C:\Users\Eman\Desktop\Belshifa\Belshifa\bin\Debug\Oracle.DataAccess.dll
+C:\Users\Gamela\Documents\Belshifa\Belshifa\bin\Debug\Belshifa.exe.config
+C:\Users\Gamela\Documents\Belshifa\Belshifa\obj\Debug\Belshifa.exe
+C:\Users\Gamela\Documents\Belshifa\Belshifa\obj\Debug\Belshifa.pdb
+E:\Menna\gam3a\3rd year\2nd-term\DB\Belshifa\Belshifa\bin\Debug\Belshifa.exe.config
+E:\Menna\gam3a\3rd year\2nd-term\DB\Belshifa\Belshifa\bin\Debug\Belshifa.exe
+E:\Menna\gam3a\3rd year\2nd-term\DB\Belshifa\Belshifa\bin\Debug\Belshifa.pdb
+E:\Menna\gam3a\3rd year\2nd-term\DB\Belshifa\Belshifa\obj\Debug\Belshifa.csprojResolveAssemblyReference.cache
+E:\Menna\gam3a\3rd year\2nd-term\DB\Belshifa\Belshifa\obj\Debug\Belshifa.Cart.resources
+E:\Menna\gam3a\3rd year\2nd-term\DB\Belshifa\Belshifa\obj\Debug\Belshifa.Insert.resources
+E:\Menna\gam3a\3rd year\2nd-term\DB\Belshifa\Belshifa\obj\Debug\Belshifa.Login.resources
+E:\Menna\gam3a\3rd year\2nd-term\DB\Belshifa\Belshifa\obj\Debug\Belshifa.Order.resources
+E:\Menna\gam3a\3rd year\2nd-term\DB\Belshifa\Belshifa\obj\Debug\Belshifa.PatientHome.resources
+E:\Menna\gam3a\3rd year\2nd-term\DB\Belshifa\Belshifa\obj\Debug\Belshifa.PharamcistOptions.resources
+E:\Menna\gam3a\3rd year\2nd-term\DB\Belshifa\Belshifa\obj\Debug\Belshifa.Properties.Resources.resources
+E:\Menna\gam3a\3rd year\2nd-term\DB\Belshifa\Belshifa\obj\Debug\Belshifa.Register.resources
+E:\Menna\gam3a\3rd year\2nd-term\DB\Belshifa\Belshifa\obj\Debug\Belshifa.RegisterPharmacist.resources
+E:\Menna\gam3a\3rd year\2nd-term\DB\Belshifa\Belshifa\obj\Debug\Belshifa.Settings.resources
+E:\Menna\gam3a\3rd year\2nd-term\DB\Belshifa\Belshifa\obj\Debug\Belshifa.Start.resources
+E:\Menna\gam3a\3rd year\2nd-term\DB\Belshifa\Belshifa\obj\Debug\Belshifa.Update_Delete.resources
+E:\Menna\gam3a\3rd year\2nd-term\DB\Belshifa\Belshifa\obj\Debug\Belshifa.csproj.GenerateResource.Cache
+E:\Menna\gam3a\3rd year\2nd-term\DB\Belshifa\Belshifa\obj\Debug\Belshifa.exe
+E:\Menna\gam3a\3rd year\2nd-term\DB\Belshifa\Belshifa\obj\Debug\Belshifa.pdb
+E:\Menna\gam3a\3rd year\2nd-term\DB\Belshifa\Belshifa\obj\Debug\Belshifa.Patient.History.resources
+C:\Users\Eman\Desktop\desktop\Belshifa\Belshifa\bin\Debug\Belshifa.exe
+C:\Users\Eman\Desktop\desktop\Belshifa\Belshifa\bin\Debug\Belshifa.exe.config
+C:\Users\Eman\Desktop\desktop\Belshifa\Belshifa\obj\Debug\Belshifa.Cart.resources
+C:\Users\Eman\Desktop\desktop\Belshifa\Belshifa\obj\Debug\Belshifa.Patient.History.resources
+C:\Users\Eman\Desktop\desktop\Belshifa\Belshifa\obj\Debug\Belshifa.Login.resources
+C:\Users\Eman\Desktop\desktop\Belshifa\Belshifa\obj\Debug\Belshifa.Order.resources
+C:\Users\Eman\Desktop\desktop\Belshifa\Belshifa\obj\Debug\Belshifa.PatientHome.resources
+C:\Users\Eman\Desktop\desktop\Belshifa\Belshifa\obj\Debug\Belshifa.PharamcistOptions.resources
+C:\Users\Eman\Desktop\desktop\Belshifa\Belshifa\obj\Debug\Belshifa.Properties.Resources.resources
+C:\Users\Eman\Desktop\desktop\Belshifa\Belshifa\obj\Debug\Belshifa.Register.resources
+C:\Users\Eman\Desktop\desktop\Belshifa\Belshifa\obj\Debug\Belshifa.RegisterPharmacist.resources
+C:\Users\Eman\Desktop\desktop\Belshifa\Belshifa\obj\Debug\Belshifa.Settings.resources
+C:\Users\Eman\Desktop\desktop\Belshifa\Belshifa\obj\Debug\Belshifa.Start.resources
+C:\Users\Eman\Desktop\desktop\Belshifa\Belshifa\obj\Debug\Belshifa.csproj.GenerateResource.Cache
+C:\Users\Eman\Desktop\desktop\Belshifa\Belshifa\obj\Debug\Belshifa.exe
+C:\Users\Eman\Desktop\desktop\Belshifa\Belshifa\obj\Debug\Belshifa.pdb
+C:\Users\Eman\Desktop\desktop\Belshifa\Belshifa\bin\Debug\Belshifa.pdb
+C:\Users\Eman\Desktop\desktop\Belshifa\Belshifa\obj\Debug\Belshifa.csprojResolveAssemblyReference.cache
