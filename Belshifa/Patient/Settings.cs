@@ -61,8 +61,8 @@ namespace Belshifa
 
             OracleCommand temp = new OracleCommand();
             temp.Connection = conn;
-            temp.CommandText = "Select * from PATIENT where Email =:E";
-            temp.Parameters.Add("E", Login.LoggedUserEmail);
+            temp.CommandText = "Select :Email from Patient";
+            temp.Parameters.Add("Email", Login.LoggedUserEmail);
             temp.CommandType = CommandType.Text;
             OracleDataReader Dr = temp.ExecuteReader();
             if (Dr.Read())

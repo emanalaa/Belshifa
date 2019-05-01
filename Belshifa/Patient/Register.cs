@@ -33,28 +33,23 @@ namespace Belshifa
             {
                 OracleCommand temp = new OracleCommand();
                 temp.Connection = conn;
-                temp.CommandText = "Select EMAIL from Patient where EMAIL =:email";
-                temp.Parameters.Add("email", EmailTextBox.Text);
+                temp.CommandText = "Select :Email from Patient";
+                temp.Parameters.Add("Email", EmailTextBox.Text);
                 temp.CommandType = CommandType.Text;
                 OracleDataReader Dr = temp.ExecuteReader();
                 if(Dr.Read())
                 {
-                    if (Dr[0].ToString() == EmailTextBox.Text)
-                    {
-                        MessageBox.Show(Dr[0].ToString());
-                        MessageBox.Show("Email ALready Exists");
-                        return;
-                    }
-                    Dr.Close();
+                    MessageBox.Show("Email ALready Exists");
+                    return;
                 }
 
-                cmd.CommandText = "insert into Patient values (:E, :n, :A, :P, :P)";
+                cmd.CommandText = "insert into Patient values (:Email, :name, :Address, :Password, :Payment)";
                 cmd.CommandType = CommandType.Text;
-                cmd.Parameters.Add("E", EmailTextBox.Text);
-                cmd.Parameters.Add("n", NameTextBox.Text);
-                cmd.Parameters.Add("A", AddressTextbox.Text);
-                cmd.Parameters.Add("P", PasswordTextbox.Text);
-                cmd.Parameters.Add("P", PaymentComboBox.SelectedItem.ToString());
+                cmd.Parameters.Add("Email", EmailTextBox.Text);
+                cmd.Parameters.Add("name", NameTextBox.Text);
+                cmd.Parameters.Add("Address", AddressTextbox.Text);
+                cmd.Parameters.Add("Password", PasswordTextbox.Text);
+                cmd.Parameters.Add("Payment", PaymentComboBox.SelectedItem.ToString());
 
                 int value = cmd.ExecuteNonQuery();
                 if (value == -1)
