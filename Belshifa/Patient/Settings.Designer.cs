@@ -47,7 +47,7 @@
             // 
             this.PaymentComboBox.FormattingEnabled = true;
             this.PaymentComboBox.Location = new System.Drawing.Point(244, 211);
-            this.PaymentComboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.PaymentComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PaymentComboBox.Name = "PaymentComboBox";
             this.PaymentComboBox.Size = new System.Drawing.Size(166, 21);
             this.PaymentComboBox.TabIndex = 19;
@@ -110,7 +110,7 @@
             // PasswordtextBox4
             // 
             this.PasswordtextBox4.Location = new System.Drawing.Point(244, 171);
-            this.PasswordtextBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.PasswordtextBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PasswordtextBox4.Name = "PasswordtextBox4";
             this.PasswordtextBox4.Size = new System.Drawing.Size(166, 20);
             this.PasswordtextBox4.TabIndex = 13;
@@ -118,7 +118,7 @@
             // AddresstextBox3
             // 
             this.AddresstextBox3.Location = new System.Drawing.Point(244, 129);
-            this.AddresstextBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.AddresstextBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AddresstextBox3.Name = "AddresstextBox3";
             this.AddresstextBox3.Size = new System.Drawing.Size(166, 20);
             this.AddresstextBox3.TabIndex = 12;
@@ -126,7 +126,7 @@
             // EmailtextBox2
             // 
             this.EmailtextBox2.Location = new System.Drawing.Point(244, 93);
-            this.EmailtextBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.EmailtextBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.EmailtextBox2.Name = "EmailtextBox2";
             this.EmailtextBox2.Size = new System.Drawing.Size(166, 20);
             this.EmailtextBox2.TabIndex = 11;
@@ -134,7 +134,7 @@
             // NametextBox1
             // 
             this.NametextBox1.Location = new System.Drawing.Point(244, 54);
-            this.NametextBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.NametextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.NametextBox1.Name = "NametextBox1";
             this.NametextBox1.Size = new System.Drawing.Size(166, 20);
             this.NametextBox1.TabIndex = 10;
@@ -144,25 +144,27 @@
             this.AddtoCartButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddtoCartButton.Font = new System.Drawing.Font("Perpetua Titling MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddtoCartButton.Location = new System.Drawing.Point(198, 258);
-            this.AddtoCartButton.Margin = new System.Windows.Forms.Padding(2);
+            this.AddtoCartButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AddtoCartButton.Name = "AddtoCartButton";
             this.AddtoCartButton.Size = new System.Drawing.Size(151, 43);
             this.AddtoCartButton.TabIndex = 20;
             this.AddtoCartButton.Text = "Update";
             this.AddtoCartButton.UseVisualStyleBackColor = true;
+            this.AddtoCartButton.Visible = false;
             this.AddtoCartButton.Click += new System.EventHandler(this.AddtoCartButton_Click);
             // 
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Perpetua Titling MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(370, 359);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Location = new System.Drawing.Point(370, 366);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(151, 50);
+            this.button1.Size = new System.Drawing.Size(151, 43);
             this.button1.TabIndex = 21;
             this.button1.Text = "Delete Account";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Visible = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
@@ -170,12 +172,13 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Perpetua Titling MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(9, 366);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(101, 43);
             this.button2.TabIndex = 22;
             this.button2.Text = "Back";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Visible = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Settings
@@ -197,7 +200,7 @@
             this.Controls.Add(this.AddresstextBox3);
             this.Controls.Add(this.EmailtextBox2);
             this.Controls.Add(this.NametextBox1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Settings";
             this.Text = "Settings";
             this.Load += new System.EventHandler(this.Settings_Load);

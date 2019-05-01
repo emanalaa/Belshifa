@@ -43,5 +43,10 @@ namespace Belshifa
                 MessageBox.Show("Please choose which user type!");
             }
         }
+
+        private void Start_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
