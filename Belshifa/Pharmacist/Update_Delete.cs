@@ -7,13 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Oracle.dataaccess.client;
-using Oracle.DataAccess.types;
+using Oracle.DataAccess.Client;
+using Oracle.DataAccess.Types;
 
 namespace Belshifa
 {
     public partial class Update_Delete : Form
     {
+        string connectionstr = "Data Source = orcl; User Id = hr; Password= hr;";
 
         public Update_Delete()
         {
@@ -24,49 +25,44 @@ namespace Belshifa
         private void Update_Delete_Load(object sender, EventArgs e)
         {
             OracleDataAdapter adapter;
-            OracleCommandBuilder builder;
             DataSet ds;
-            string connectionstr = "Data Source = orcl; User Id = hr; Password= hr;";
-            string commandstr = "select Category from Medication";
+
+            string commandstr = "select distinct Category from Medication";
             adapter = new OracleDataAdapter(commandstr, connectionstr);
+
             ds = new DataSet();
-            adapter.fill(ds);
-            CategoryList.DataSource = (ds.Tables[0]);
+            adapter.Fill(ds);
+
+            CategoryList.DataSource = ds.Tables[0];
             //CategoryList.Items.Add(ds.Tables[0]);
-
-
         }
 
         private void CategoryList_SelectedIndexChanged(object sender, EventArgs e)
-        { /////Disconnected Mode task 2 select all rows
-            OracleDataAdapter adapter;
-            OracleCommandBuilder builder;
+        { 
+            /////Disconnected Mode task 2 select all rows
+            OracleDataAdapter adapter = new OracleDataAdapter();
             DataSet ds;
-            string connectionstr = "Data Source = orcl; User Id = hr; Password= hr;";
             string selectedcategory = CategoryList.SelectedItem.ToString();
 
-            string commandstr = "select * from Medication where Category = :c";//bind var
-            adapter.SelectCommand.Paramters.Add("c", CategoryList.SelectedItem.ToString());
+            string commandstr = "select * from Medication where Category = :c ";//bind var
+            adapter.SelectCommand.Parameters.Add("c", CategoryList.SelectedItem.ToString());
             adapter = new OracleDataAdapter(commandstr, connectionstr);
             ds = new DataSet();
-            adapter.fill(ds);
+            adapter.Fill(ds);
             DrugComboBox.DataSource = ds.Tables["Medication"].Columns["Name"];
-
         }
 
         private void DrugComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            OracleDataAdapter adapter;
-            OracleCommandBuilder builder;
+            OracleDataAdapter adapter = new OracleDataAdapter();
             DataSet ds;
-            string connectionstr = "Data Source = orcl; User Id = hr; Password= hr;";
             string selectedcategory = CategoryList.SelectedItem.ToString();
 
             string commandstr = "select * from Medication where Name = :c";//bind var
-            adapter.SelectCommand.Paramters.Add("c", DrugComboBox.SelectedItem.ToString());
+            adapter.SelectCommand.Parameters.Add("c", DrugComboBox.SelectedItem.ToString());
             adapter = new OracleDataAdapter(commandstr, connectionstr);
             ds = new DataSet();
-            adapter.fill(ds);
+            adapter.Fill(ds);
 
             PriceTextbox.Text = ds.Tables["Medication"].Columns["Price"].ToString();
             PrecautionsTextBox.Text = ds.Tables["Medication"].Columns["Precautions"].ToString();
@@ -83,21 +79,20 @@ namespace Belshifa
         {
             if (DrugComboBox.SelectedIndex <= -1) //nothing was selected
                 MessageBox.Show("Please Select a Drug to update!");
-
             else if (DrugComboBox.SelectedIndex > -1) //somthing was selected
             {
                 string drug_name = DrugComboBox.SelectedItem.ToString();
-                OracleDataAdapter adapter;
+                OracleDataAdapter adapter = new OracleDataAdapter();
                 OracleCommandBuilder builder;
                 DataSet ds;
                 DataTable Data_table;
                 DataRow drCurrent;// Obtain a new DataRow object from the DataTable.
                 string connectionstr = "Data Source = orcl; User Id = hr; Password= hr;";
                 string commandstr = "select * from Medication where Name = :c";//bind var
-                adapter.SelectCommand.Paramters.Add("c", DrugComboBox.SelectedItem.ToString());
+                adapter.SelectCommand.Parameters.Add("c", DrugComboBox.SelectedItem.ToString());
                 adapter = new OracleDataAdapter(commandstr, connectionstr);
                 ds = new DataSet();
-                adapter.fill(ds);
+                adapter.Fill(ds);
                 adapter.FillSchema(ds, SchemaType.Source, "Medication");
                 Data_table = ds.Tables["Medication"];
                 //////Update
@@ -132,18 +127,16 @@ namespace Belshifa
             else if (DrugComboBox.SelectedIndex > -1) //somthing was selected
             {
                 string drug_name = DrugComboBox.SelectedItem.ToString();
-                OracleDataAdapter adapter;
+                OracleDataAdapter adapter = new OracleDataAdapter();
                 OracleCommandBuilder builder;
-                string drug_name = DrugComboBox.SelectedItem.ToString();
                 DataSet ds;
                 DataTable Data_table;
                 DataRow drCurrent;// Obtain a new DataRow object from the DataTable.
-                string connectionstr = "Data Source = orcl; User Id = hr; Password= hr;";
                 string commandstr = "select * from Medication where Name = :c";//bind var
-                adapter.SelectCommand.Paramters.Add("c", DrugComboBox.SelectedItem.ToString());
+                adapter.SelectCommand.Parameters.Add("c", DrugComboBox.SelectedItem.ToString());
                 adapter = new OracleDataAdapter(commandstr, connectionstr);
                 ds = new DataSet();
-                adapter.fill(ds);
+                adapter.Fill(ds);
                 adapter.FillSchema(ds, SchemaType.Source, "Medication");
                 Data_table = ds.Tables["Medication"];
                 drCurrent =Data_table.Rows.Find(drug_name);

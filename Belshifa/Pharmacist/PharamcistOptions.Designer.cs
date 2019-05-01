@@ -36,34 +36,37 @@
             // 
             this.AddtoCartButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddtoCartButton.Font = new System.Drawing.Font("Perpetua Titling MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddtoCartButton.Location = new System.Drawing.Point(188, 266);
+            this.AddtoCartButton.Location = new System.Drawing.Point(141, 216);
+            this.AddtoCartButton.Margin = new System.Windows.Forms.Padding(2);
             this.AddtoCartButton.Name = "AddtoCartButton";
-            this.AddtoCartButton.Size = new System.Drawing.Size(201, 53);
+            this.AddtoCartButton.Size = new System.Drawing.Size(151, 43);
             this.AddtoCartButton.TabIndex = 10;
             this.AddtoCartButton.Text = "Insert";
             this.AddtoCartButton.UseVisualStyleBackColor = true;
-            this.AddtoCartButton.Visible = false;
+            this.AddtoCartButton.Click += new System.EventHandler(this.AddtoCartButton_Click);
             // 
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Perpetua Titling MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(188, 192);
+            this.button1.Location = new System.Drawing.Point(141, 156);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(201, 53);
+            this.button1.Size = new System.Drawing.Size(151, 43);
             this.button1.TabIndex = 11;
             this.button1.Text = "Update";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Visible = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // PharamcistOptions
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCoral;
-            this.ClientSize = new System.Drawing.Size(577, 507);
+            this.ClientSize = new System.Drawing.Size(433, 412);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.AddtoCartButton);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PharamcistOptions";
             this.Text = "PharamcistOptions";
             this.ResumeLayout(false);
